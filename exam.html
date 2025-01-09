@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Exams</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #1a237e;
+            padding: 1rem 2rem;
+            color: white;
+        }
+
+        .logo h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        
+        .nav-links a:hover {
+            color:white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .exam-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .exam-box h2 {
+            color: #1a237e;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1a237e;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>EduHub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="exam.html" class="dropbtn">Entrance Exams</a>
+                    <div class="dropdown-content">
+                        <a href="exam.html">JEE</a>
+                        <a href="exam.html">NEET-UG</a>
+                        <a href="exam.html">CUET</a>
+                        <a href="exam.html">CLAT</a>
+                        <a href="exam.html">GATE</a>
+                        <a href="exam.html">NEET-PG</a>
+                        <a href="exam.html">CAT</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="abroad.html" class="dropbtn">Outside India</a>
+                    <div class="dropdown-content">
+                        <a href="abroad.html">SAT</a>
+                        <a href="abroad.html">GRE</a>
+                        <a href="abroad.html">GMAT</a>
+                        <a href="abroad.html">IELTS</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Entrance Exams</h1>
+        <div class="exam-grid">
+            <div class="exam-box">
+                <h2>JEE</h2>
+                <p>The Joint Entrance Examination (JEE) is an engineering entrance assessment conducted for admission to various engineering colleges in India.</p>
+            </div>
+            <div class="exam-box">
+                <h2>NEET UG</h2>
+                <p>The National Eligibility cum Entrance Test (NEET-UG) is the qualifying test for MBBS and BDS programs in Indian medical and dental colleges.</p>
+            </div>
+            <div class="exam-box">
+                <h2>CUET</h2>
+                <p>The Common University Entrance Test (CUET) is an all-India test for admission to various undergraduate and postgraduate courses in central universities across India.</p>
+            </div>
+            <div class="exam-box">
+                <h2>CLAT</h2>
+                <p>The Common Law Admission Test (CLAT) is a centralized national level entrance test for admissions to law universities in India.</p>
+            </div>
+            <div class="exam-box">
+                <h2>GATE</h2>
+                <p>GATE is an entrance exam for candidates who wants to pursue M.Tech (Master of Technology) or ME (Master of Engineering) from IITs.</p>
+            </div>
+            <div class="exam-box">
+                <h2>NEET PG</h2>
+                <p>The National Eligibility cum Entrance Test for Postgraduates (NEET-PG) is the qualifying test for various MD/MS courses.</p>
+            </div>
+            <div class="exam-box">
+                <h2>CAT</h2>
+                <p>The Common Admission Test (CAT) is a computer-based test for admission to graduate management programs in IIMs and other top B-schools in India.</p>
+            </div>
+            <div class="exam-box">
+                <h2>IISER Aptitude Test</h2>
+                <p>Entrance exams for five-year-long BS-MS dual degree programmes in IISER</p>
+            </div>
+            <div class="exam-box">
+                <h2>BITSAT</h2>
+                <p>Birla Institute of Technology and Science Admission Test (BITSAT) is an entrance exam conducted by the Birla Institute of Technology and Science (BITS), Pilani, for admissions to undergraduate engineering courses (BE), Bachelor of Pharmacy (BPharm) and Msc at its three campuses located at Pilani, Goa and Hyderabad.</p>
+            </div>
+            <div class="exam-box">
+                <h2>ISI Entrance Exam</h2>
+                <p>Entrance exam conducted by ISI Kolkata in order to grant admission into various courses like B.Stat(Hons), B.Math(Hons), etc.</p>
+            </div>
+            <div class="exam-box">
+                <h2>National Institute of Fashion Technology (NIFT) Entrance Test</h2>
+                <p>Entrance exam conducted for fashion design programmes offered at both UG and PG levels.</p>
+            </div>
+            <div class="exam-box">
+                <h2>Management Aptitude Test (MAT)</h2>
+                <p>The MAT entrance exam is conducted by the All India Management Association (AIMA) for candidates desiring to pursue MBA/PGDM in India. It is considered the second best option after CAT. </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 EduHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
