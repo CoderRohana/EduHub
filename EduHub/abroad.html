@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outside India</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #1a237e;
+            padding: 1rem 2rem;
+            color: white;
+        }
+
+        .logo h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        
+        .nav-links a:hover {
+            color:white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .exam-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .exam-box h2 {
+            color: #1a237e;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1a237e;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>EduHub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="exam.html" class="dropbtn">Entrance Exams</a>
+                    <div class="dropdown-content">
+                        <a href="exam.html">JEE</a>
+                        <a href="exam.html">NEET-UG</a>
+                        <a href="exam.html">CUET</a>
+                        <a href="exam.html">CLAT</a>
+                        <a href="exam.html">GATE</a>
+                        <a href="exam.html">NEET-PG</a>
+                        <a href="exam.html">CAT</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="abroad.html" class="dropbtn">Outside India</a>
+                    <div class="dropdown-content">
+                        <a href="abroad.html">SAT</a>
+                        <a href="abroad.html">GRE</a>
+                        <a href="abroad.html">GMAT</a>
+                        <a href="abroad.html">IELTS</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Exams for Outside India</h1>
+        <div class="exam-grid">
+            <div class="exam-box">
+                <h2>SAT</h2>
+                <p>The Scholastic Assessment Test, entrance exam for students who wish to pursue undergraduate courses, especially in Canada & US</p>
+            </div>
+            <div class="exam-box">
+                <h2>GRE</h2>
+                <p>The Graduate Record Examination is an entrance exam for pursuing postgraduate (PG) level studies in universities abroad.</p>
+            </div>
+            <div class="exam-box">
+                <h2>GMAT</h2>
+                <p>The Graduate Management Admission Test used for obtaining admissions to B-schools abroad</p>
+            </div>
+            <div class="exam-box">
+                <h2>IELTS</h2>
+                <p>English Proficiency test which measures our english reading,writing,listening and speaking skills.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 EduHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

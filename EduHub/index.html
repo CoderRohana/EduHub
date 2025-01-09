@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>EduHub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="exam.html" class="dropbtn">Entrance Exams</a>
+                    <div class="dropdown-content">
+                        <a href="exam.html">JEE</a>
+                        <a href="exam.html">NEET-UG</a>
+                        <a href="exam.html">CUET</a>
+                        <a href="exam.html">CLAT</a>
+                        <a href="exam.html">GATE</a>
+                        <a href="exam.html">NEET-PG</a>
+                        <a href="exam.html">CAT</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="abroad.html" class="dropbtn">Outside India</a>
+                    <div class="dropdown-content">
+                        <a href="abroad.html">SAT</a>
+                        <a href="abroad.html">GRE</a>
+                        <a href="abroad.html">GMAT</a>
+                        <a href="abroad.html">IELTS</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slideshow">
+        <h2 style="text-align:center">Welcome to EduHub</h2>
+
+        <div class="container">
+            <!-- Slide 1 -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="image1.webp" alt="students">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="image2.webp" alt="students">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="image3.avif" alt="students">
+            </div>
+
+            <!-- Next/Previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <!-- Caption container -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnails for manual slide control -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="image1.webp" onclick="currentSlide(1)" alt="Class 12th students smiling for a picture">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image2.webp" onclick="currentSlide(2)" alt="Class 12th students discussing answers">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image3.avif" onclick="currentSlide(3)" alt="Class 12th students smiling for a picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to EduHub, your one-stop destination for academic guidance and resources. We aim to provide comprehensive information to help students make informed decisions about their education and career paths. Our founder, Mr. Rohan Dutta, loves education and with the hope of guiding young minds he created this website.   
+        </p>
+    </section>
+    <section class="science-courses">
+        <h2>Courses after 12th Science:</h2>
+        <p>For students with science stream(Medical (PCB)):</p> 
+        <button onclick="toggleCourses('medCourses')">Show PCB Courses</button>
+        <div id="medCourses" class="courses-list">
+            <ul>
+                <li><strong>MBBS(Bachelor of Medicine and Bachelor of Surgery)</strong></li>
+                <li><strong>BDS(Bachelor of Dental Surgery)</strong></li>
+                <li><strong>BAMS(Bachelor of Ayurvedic Medicine and Surgery)</strong></li>
+                <li><strong>BHMS(Bachelor of Homeopathic Medicine and Surgery)</strong></li>
+                <li><strong>B.Sc(Biology/Biotechnology/Biochemistry/Microbiology/Genetics)</strong></li>
+                <li><strong>B.Sc(Zoology/Botany/Physiology)</strong></li>
+                <li><strong>B.Sc(Nursing)</strong></li>
+                <li><strong>BPT(Bachelor of Physiotherapy)</strong></li>
+                <li><strong>B.Sc(Radiology/Medical Lab Technology/Anesthesia Technology)</strong></li>
+                <li><strong>B.Pharm(Bachelor of Pharmacy)</strong></li>
+                <li><strong>B.Sc(Agriculture)</strong></li>
+                <li><strong>B.Sc(Environmental Science)</strong></li>
+                <li><strong>Bachelor of Forensic Science</strong></li>
+            </ul>
+        </div>
+        <p>For students with science stream(Non-Medical (PCM)):</p>
+        <button onclick="toggleCourses('nonMedCourses')">Show PCM Courses</button>
+        <div id="nonMedCourses" class="courses-list">
+            <ul>
+                <li><strong>B.E./B.Tech(Bachelor of Technology)</strong></li>
+                <li><strong>B.Arch (Bachelor of Architecture)</strong></li>
+                <li><strong>B.Sc(Physics/Chemistry/Mathematics/Statistics)</strong></li>
+                <li><strong>BCA(Bachelor of Computer Applications)</strong></li>
+                <li><strong>B.Sc(Computer Science/IT)</strong></li>
+                <li><strong>B.Sc(Nautical Science)</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="commerce-arts">
+        <h2>Courses after 12th Commerce/Arts:</h2>
+        <p>
+            Explore various courses based on your interests:
+        </p>
+        <a href="commerce.html">Click here to view detailed courses after 12th Commerce</a>
+        <a href="arts.html">Click here to view detailed courses after 12th Arts</a>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
